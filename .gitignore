@@ -1,0 +1,32 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+*.env
+credentials.json
+*credential*.json
+*secret*
+*.key
+*.pem
+*token*.txt
+
+# --- n8n local data (if ever self-hosted locally) ---
+.n8n/
+database.sqlite
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Node / tooling (in case you add scripts) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Editor / misc ---
+.vscode/
+.idea/
+*.swp
+*.log
+Thumbs.db

@@ -60,9 +60,9 @@
         "resource": "calendar",
         "calendar": {
           "__rl": true,
-          "value": "heintayza77777@gmail.com",
+          "value": "YOUR_CALENDAR_EMAIL@gmail.com",
           "mode": "list",
-          "cachedResultName": "heintayza77777@gmail.com"
+          "cachedResultName": "YOUR_CALENDAR_EMAIL@gmail.com"
         },
         "timeMin": "={{ $('AI Agent').item.json.output.startDateTime }}",
         "timeMax": "={{ DateTime.fromISO($('AI Agent').item.json.output.startDateTime).plus({ minutes: $('AI Agent').item.json.output.durationMinutes }).toISO() }}",
@@ -121,9 +121,9 @@
       "parameters": {
         "calendar": {
           "__rl": true,
-          "value": "heintayza77777@gmail.com",
+          "value": "YOUR_CALENDAR_EMAIL@gmail.com",
           "mode": "list",
-          "cachedResultName": "heintayza77777@gmail.com"
+          "cachedResultName": "YOUR_CALENDAR_EMAIL@gmail.com"
         },
         "start": "={{ $('AI Agent').item.json.output.startDateTime }}",
         "end": "={{ DateTime.fromISO($('AI Agent').item.json.output.startDateTime).plus({ minutes: $('AI Agent').item.json.output.durationMinutes }).toISO() }}",
@@ -310,12 +310,9 @@
     "timeSavedMode": "fixed",
     "callerPolicy": "workflowsFromSameOwner"
   },
-  "versionId": "baf273f6-6e54-4a19-bfa8-f5c88afb34ee",
   "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "f23239bc0d817522f546f4d7a3b9a6ee354b2b9eae00e43ae92f1a07486ae5e4"
+    "templateCredsSetupCompleted": true
   },
   "nodeGroups": [],
-  "id": "FEvLuimT9xOfDVBZ",
   "tags": []
 }

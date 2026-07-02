@@ -1,32 +1,30 @@
-# --- Secrets (never commit) ---
+# --- Secrets & credentials (safety net — never commit these) ---
 .env
 .env.*
-*.env
-credentials.json
-*credential*.json
-*secret*
-*.key
 *.pem
-*token*.txt
+*.key
+*credentials*
+*secrets*
+*token*
+!**/README.md
 
-# --- n8n local data (if ever self-hosted locally) ---
+# --- n8n local artifacts ---
 .n8n/
-database.sqlite
+*.sqlite
+*.backup.json
 
 # --- macOS ---
 .DS_Store
 .AppleDouble
 .LSOverride
-._*
 
-# --- Node / tooling (in case you add scripts) ---
-node_modules/
-npm-debug.log*
-yarn-error.log*
-
-# --- Editor / misc ---
+# --- Editors ---
 .vscode/
 .idea/
 *.swp
-*.log
-Thumbs.db
+
+# --- Node / misc (if you add helper scripts later) ---
+node_modules/
+npm-debug.log*
+__pycache__/
+*.pyc
